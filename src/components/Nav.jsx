@@ -3,7 +3,7 @@ import { hamburger } from "../assets/icons"
 
 const Nav = () => {
     return (
-        <header>
+        <header className="padding-x py-8 absolute z-10 w-full">
             <nav>
                 <a href="/">
                     <img src={headerLogo} width={130} height={29} alt="Logo" />

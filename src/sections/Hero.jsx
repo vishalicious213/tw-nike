@@ -1,4 +1,5 @@
 import { arrowRight } from "../assets/icons"
+import { bigShoe1 } from "../assets/images"
 import Button from "../components/Button"
 import { statistics } from "../constants"
 
@@ -27,6 +28,15 @@ const Hero = () => {
         </div>
       </div>
 
+      <div>
+        <img 
+          src={bigShoe1} 
+          alt="Shoe collection" 
+          width={610}
+          height={500}
+          className="object-contain relatize z-10"
+      />
+      </div>
     </section>
   )
 }

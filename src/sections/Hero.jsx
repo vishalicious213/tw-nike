@@ -1,7 +1,7 @@
 import { arrowRight } from "../assets/icons"
 import { bigShoe1 } from "../assets/images"
 import Button from "../components/Button"
-import { statistics } from "../constants"
+import { shoes, statistics } from "../constants"
 
 const Hero = () => {
   return (
@@ -35,7 +35,14 @@ const Hero = () => {
           width={610}
           height={500}
           className="object-contain relatize z-10"
-      />
+        />
+        <div>
+          {shoes.map(shoe => (
+            <div key={shoe}>
+              <ShoeCard />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )

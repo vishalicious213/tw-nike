@@ -1,6 +1,13 @@
-const Button = () => {
+const Button = ({ label, iconURL }) => {
     return (
-        <button className="">Click Me</button>
+        <button className="">
+            {label}
+            <img 
+                src={iconURL} 
+                alt={`${iconURL} icon`}
+                className="ml-2 rounded-full w-5 h-5"
+            />
+        </button>
     )
 }
 

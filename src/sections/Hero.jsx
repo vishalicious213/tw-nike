@@ -15,7 +15,7 @@ const Hero = () => {
           <span>Nike </span>Shoes
         </h1>
         <p>Discover stylish Nike arrivals, quality comfort and innovation for your active life.</p>
-        <Button label="Show now" iconURL={arrowRight} />
+        <Button label="Shop now" iconURL={arrowRight} />
       </div>
     </section>
   )

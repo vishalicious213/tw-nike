@@ -1,6 +1,7 @@
 import { arrowRight } from "../assets/icons"
 import { bigShoe1 } from "../assets/images"
 import Button from "../components/Button"
+import ShoeCard from "../components/ShoeCard"
 import { shoes, statistics } from "../constants"
 
 const Hero = () => {

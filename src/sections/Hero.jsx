@@ -40,15 +40,27 @@ const Hero = () => {
           className="object-contain relatize z-10"
         />
         <div className="flex sm:gap-6 gap:4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
-          {shoes.map(shoe => (
+          {shoes.map(shoe => {
+            console.log("Hero ShoeCard map", shoe)
+            return (
+              <div key={shoe.bigShoe}>
+              <ShoeCard 
+                imgURL={shoe} 
+                changeBigShoeImage={(shoe) => {setBigShoeImg(shoe)}}
+                bigShoeImg={bigShoeImg}
+              />
+            </div>
+            )
+          })}
+          {/* {shoes.map(shoe => (
             <div key={shoe}>
               <ShoeCard 
                 imgURL={shoe} 
-                changeBigShowImage={() => {}}
-                bigShoeImg=""
+                changeBigShoeImage={(shoe) => {setBigShoeImg(shoe)}}
+                bigShoeImg={bigShoeImg}
               />
             </div>
-          ))}
+          ))} */}
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg }) => {
     const handleClick = () => {
         if (bigShoeImg !== imgURL.bigShoeImg) {
-            changeBigShoeImage(imgURL.bigShoeImg)
+            changeBigShoeImage(imgURL.bigShoe)
         }
     }
     return (
@@ -10,7 +10,13 @@ const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg }) => {
             onClick={handleClick}
         >
             <div className="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4">
-                <img src={imgURL.thumbnail} alt="shoe collection" width={127} height={103} className="object-contain" />
+                <img 
+                    src={imgURL.thumbnail} 
+                    alt="shoe collection" 
+                    width={127} 
+                    height={103} 
+                    className="object-contain" 
+                />
             </div>
         </div>
     )

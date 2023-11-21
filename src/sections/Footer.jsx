@@ -8,6 +8,7 @@ const Footer = () => {
           <a href="/">
             <img src={footerLogo} alt="" width={150} height={46} />
           </a>
+          <p className="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm">Get shoes ready  for the new term at your nearest Nike store. Find Your perfect size in store. Get rewards!</p>
         </div>
       </div>
     </footer>

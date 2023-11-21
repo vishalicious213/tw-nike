@@ -1,6 +1,8 @@
-const ReviewCard = () => {
+const ReviewCard = ({ imgURL, customerName, rating, feedback }) => {
   return (
-    <div>ReviewCard</div>
+    <div className="flex justify-center items-center flex-col">
+        
+    </div>
   )
 }
 

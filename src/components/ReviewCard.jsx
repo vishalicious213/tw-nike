@@ -16,6 +16,8 @@ const ReviewCard = ({ imgURL, customerName, rating, feedback }) => {
         className="object-contain m-0"
         alt="rating" 
     />
+    <p>({rating})</p>
+    <h3>{customerName}</h3>
     </div>
   )
 }

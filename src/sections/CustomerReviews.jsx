@@ -1,4 +1,5 @@
 import { reviews } from "../constants"
+import ReviewCard from "../components/ReviewCard"
 
 const CustomerReviews = () => {
   return (
@@ -8,7 +9,7 @@ const CustomerReviews = () => {
 
       <div className="mt-24 flex flex-1 justify-evenly items-center max-lg:flex-col gap-14">
         {reviews.map(review => (
-          <ReviewCard />
+          <ReviewCard key={review.customerName} />
         ))}
       </div>
     </section>

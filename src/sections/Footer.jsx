@@ -1,4 +1,5 @@
 import { footerLogo } from "../assets/images"
+import { socialMedia } from "../constants"
 
 const Footer = () => {
   return (
@@ -9,6 +10,13 @@ const Footer = () => {
             <img src={footerLogo} alt="" width={150} height={46} />
           </a>
           <p className="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm">Get shoes ready  for the new term at your nearest Nike store. Find Your perfect size in store. Get rewards!</p>
+          <div className="flex items-center gap-5 mt-8">
+            {socialMedia.map(icon => (
+              <div>
+                <img src={icon.src} alt={icon.alt} width={24} height={24} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </footer>

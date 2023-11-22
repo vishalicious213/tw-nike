@@ -32,6 +32,8 @@ const Footer = () => {
           ))}
         </div>
       </div>
+
+      <div className="flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center"></div>
     </footer>
   )
 }

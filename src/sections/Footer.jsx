@@ -39,6 +39,7 @@ const Footer = () => {
           <img src={copyrightSign} alt="copyright sign" width={20} height={20} className="rounded-full m-0" />
           <p>Copyright 2023. All rights reserved.</p>
         </div>
+        <p className="font-montserrat cursor-pointer">Terms & Conditions</p>
       </div>
     </footer>
   )
